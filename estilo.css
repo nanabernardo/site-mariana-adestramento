@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #642e8e;
+}
+
+div#interface {
+  width: 80%;
+  background-color: #704b8d;
+  /*margin: -10px auto 10px auto;*/
+  margin-top: -10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* formatação do menu*/
+nav#menu {
+  display: flex;
+}
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  left: center;
+}
+nav#menu li {
+  display: inline-block;
+  background-color: #ee9d37;
+  padding: 10px; /*cria espaço dentro do objeto*/
+  margin: 5px; /*cria espaço fora do objeto*/
+  transition: background-color 1s;
+  border-radius: 10px;
+}
+
+nav#menu li:hover {
+  background-color: #eec491;
+}
+
+nav#menu a {
+  font-family: "Titillium Web", serif;
+  color: white;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  color: #642e8e;
+}
+
+nav#menu h1 {
+  display: none;
+}
+
+table {
+  align-self: center;
+  color: rgb(172, 132, 196);
+  text-align: center;
+  border: 1px solid #50167c;
+  border-spacing: 0px;
+  width: 350px;
+  margin: 10px;
+}
+
+table td {
+  border: 1px solid #50167c;
+  padding: 5px;
+}
+
+p {
+  text-indent: 20px;
+  text-align: justify;
+  color: white;
+}
+
+header#cabecalho img#logo {
+  position: absolute;
+  left: 900px;
+  top: 130px;
+}
+
+header#cabecalho h1 {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: bold;
+  color: #ee9d37;
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+header#cabecalho h2 {
+  font-family: "Titillium Web", serif;
+  color: #ee9d37;
+  font-size: 15pt;
+  margin-top: -10px;
+}
+
+header#cabecalho img#logo {
+  width: 200px;
+  height: auto;
+  left: 70%;
+  top: 20%;
+}
+div#interface img#foto {
+  position: relative;
+  left: 20%;
+  height: 200px;
+  width: auto;
+}
+
+section#txtp {
+  width: 600px;
+}
+
+footer#rodape {
+  /*forma a linha que separa o rodapé do body*/
+  clear: both;
+  border-top: 1px solid #ee9d37;
+}
+footer#rodape p {
+  text-align: center;
+}
