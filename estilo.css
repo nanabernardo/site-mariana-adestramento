@@ -56,21 +56,6 @@ nav#menu h1 {
   display: none;
 }
 
-table {
-  align-self: center;
-  color: rgb(172, 132, 196);
-  text-align: center;
-  border: 1px solid #50167c;
-  border-spacing: 0px;
-  width: 350px;
-  margin: 10px;
-}
-
-table td {
-  border: 1px solid #50167c;
-  padding: 5px;
-}
-
 p {
   text-indent: 20px;
   text-align: justify;
@@ -106,15 +91,72 @@ header#cabecalho img#logo {
   left: 70%;
   top: 20%;
 }
-div#interface img#foto {
-  position: relative;
-  left: 20%;
-  height: 200px;
-  width: auto;
+
+figure.foto-principal {
+ position: relative;
+  border: 3px solid #642e8e;
+  box-shadow: 1px 1px 4px;
 }
 
-section#txtp {
+figure.foto-principal img {
+ 
+  height: 100%;
+  width: 100%;
+}
+
+figure.foto-principal figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.foto-principal:hover figcaption {
+    opacity: 1;
+}
+
+section {
   width: 600px;
+}
+
+
+
+section#val {
+    margin-left: 20%;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+table {
+  align-self: center;
+  color: rgb(194, 162, 212);
+  text-align: center;
+  border: 1px solid #50167c;
+  border-spacing: 0px;
+  width: 350px;
+  margin: 10px;
+}
+
+table td {
+  border: 1px solid #50167c;
+  padding: 5px;
+}
+
+caption {
+  padding: 5px;
 }
 
 footer#rodape {
@@ -124,4 +166,9 @@ footer#rodape {
 }
 footer#rodape p {
   text-align: center;
+}
+
+footer#rodape a {
+    font-size: 15px
+    text-decoration: none;
 }
