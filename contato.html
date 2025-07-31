@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link rel="stylesheet" href="estilo.css">
-   
-</head>
-<body>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
     <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
-                <h1>Mariana Bernardo Adestramento</h1>
-                <h2>Seu melhor amigo com melhor qualidade de vida!</h2>
-            </hgroup>
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Mariana Bernardo Adestramento</h1>
+          <h2>Seu melhor amigo com melhor qualidade de vida!</h2>
+        </hgroup>
 
-             <img id="logo" src="_imagens/logo-escrito-vazado-branco.png" alt="logo">
-             <nav id="menu"> <!-- nav é menu de navegação da página-->
-                <h1>Menu Principal</h1> <!--Não tem relevancia para a página, mas tem relevância para busca-->
-                <ul type="disc">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="adestramento.html">Adestramento</a></li>
-                    <li><a href="consultaComportamental.html">Consulta comportamental</a></li>
-                    <li><a href="socializacao.html">Socialização</a></li>
-                    <li><a href="valores.html">Valores</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <footer id="rodape">
-            <p> Mariana Bernardo Adestramento</p>
-            <a href="http://www.facebook.com/marianabernardo.adestradora" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/mariana.adestradora/" target="_blank">Instagram</a>
-         </footer>
-         <script src="script.js"></script>
+        <img
+          id="logo"
+          src="_imagens/logo-escrito-vazado-branco.png"
+          alt="logo"
+        />
+        <nav id="menu">
+          <!-- nav é menu de navegação da página-->
+          <h1>Menu Principal</h1>
+          <!--Não tem relevancia para a página, mas tem relevância para busca-->
+          <ul type="disc">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adestramento.html">Adestramento</a></li>
+            <li>
+              <a href="consultaComportamental.html">Consulta comportamental</a>
+            </li>
+            <li><a href="socializacao.html">Socialização</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Entre em contato</h2>
+          <form action="enviar" method="post">
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem:</label>
+              <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer id="rodape">
+        <p>Mariana Bernardo Adestramento</p>
+        <a
+          href="http://www.facebook.com/marianabernardo.adestradora"
+          target="_blank"
+          >Facebook</a
+        >
+        <a href="https://www.instagram.com/mariana.adestradora/" target="_blank"
+          >Instagram</a
+        >
+      </footer>
+      <script src="script.js"></script>
     </div>
-</body>
+  </body>
 </html>

@@ -159,6 +159,65 @@ caption {
   padding: 5px;
 }
 
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #642e8e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: "Titillium Web", sans-serif;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    background-color: rgb(194, 162, 212);
+}
+
+form button {
+    background: #ee9d37;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+form button:hover {
+    background-color: #eec491;
+    color: #50167c;
+}
+
 footer#rodape {
   /*forma a linha que separa o rodapé do body*/
   clear: both;
