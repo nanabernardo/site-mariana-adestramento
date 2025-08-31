@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 30px;
   background-color: #704b8d;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -46,13 +46,13 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .navbar li {
   background-color: #ee9d37;
-  margin: 10px;
-  padding: 10px 15px;
+  margin: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
   transition: background-color 0.3s, padding 0.3s, font-size 0.3s;
   flex-shrink: 1;
@@ -84,7 +84,7 @@ body {
 
 .header-test h1 {
   font-family: "Titillium Web", serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 50px;
   color: #ee9d37;
   margin-bottom: 10px;
@@ -108,11 +108,16 @@ figure.foto-principal {
   border: 3px solid #642e8e;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 figure.foto-principal img {
-  width: 100%;
+  max-width: 90%;
   height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -159,18 +164,23 @@ h2 {
   color: white;
 }
 table {
-  align-self: center;
   color: rgb(194, 162, 212);
   text-align: center;
   border: 1px solid #50167c;
   border-spacing: 0px;
   width: 350px;
-  margin: 10px;
+  margin: 20px auto;
 }
 
 table td {
   border: 1px solid #50167c;
   padding: 5px;
+}
+
+#val {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 caption {
@@ -255,30 +265,10 @@ footer#rodape a {
   margin: 0 10px;
 }
 
-/*responsivo*/
-/* @media (max-width: 973px) {
+@media (max-width: 1414px) {
   .header-container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  .navbar ul {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .navbar li {
-    padding: 10px 15px;
-    flex-shrink: 0;
-  }
-  .navbar a {
-    font-size: 16px;
-  }
-} */
-
-@media (max-width: 973px) {
-  .header-container {
-    flex-direction: column;
     align-items: center;
   }
   .menu-toggler {
@@ -286,23 +276,31 @@ footer#rodape a {
   }
   .navbar {
     display: none;
-    width: 100%;
-    text-align: center;
-  }
-  .navbar ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 90%;
+    background-color: #704b8d;
     flex-direction: column;
-    width: 100%;
+    text-align: flex-start;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+  }
+  .navbar.show ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     gap: 10px;
   }
   .navbar li {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .navbar.show {
     display: flex;
-    flex-direction: column;
   }
   .logo {
-    margin: 0 auto;
+    margin: 0;
   }
 }
