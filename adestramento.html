@@ -12,32 +12,37 @@
   </head>
   <body>
     <div id="interface">
-      <header id="cabecalho">
-        <hgroup>
+      <header id="site-header">
+        <div class="header-container">
+          <a href="index.html" class="logo">
+            <img
+              src="_imagens/logo-escrito-vazado-branco.png"
+              alt="logo-Mariana-Adestramento"
+            />
+          </a>
+
+          <button class="menu-toggler" aria-label="Abrir menu">☰</button>
+
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="adestramento.html">Adestramento</a></li>
+              <li>
+                <a href="consultaComportamental.html"
+                  >Consulta comportamental</a
+                >
+              </li>
+              <li><a href="socializacao.html">Socialização</a></li>
+              <li><a href="valores.html">Valores</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-test">
           <h1>Mariana Bernardo Adestramento</h1>
           <h2>Seu melhor amigo com melhor qualidade de vida!</h2>
-        </hgroup>
-
-        <img
-          id="logo"
-          src="_imagens/logo-escrito-vazado-branco.png"
-          alt="logo"
-        />
-        <nav id="menu">
-          <!-- nav é menu de navegação da página-->
-          <h1>Menu Principal</h1>
-          <!--Não tem relevancia para a página, mas tem relevância para busca-->
-          <ul type="disc">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="adestramento.html">Adestramento</a></li>
-            <li>
-              <a href="consultaComportamental.html">Consulta comportamental</a>
-            </li>
-            <li><a href="socializacao.html">Socialização</a></li>
-            <li><a href="valores.html">Valores</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+        </div>
       </header>
       <section id="ades">
         <h1>Como funciona o adestramento?</h1>

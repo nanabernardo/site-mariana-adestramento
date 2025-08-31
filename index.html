@@ -11,23 +11,19 @@
     />
   </head>
   <body>
-    <div id="interface">
-      <header id="cabecalho">
-        <hgroup>
-          <h1>Mariana Bernardo Adestramento</h1>
-          <h2>Seu melhor amigo com melhor qualidade de vida!</h2>
-        </hgroup>
+    <header id="site-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="_imagens/logo-escrito-vazado-branco.png"
+            alt="logo-Mariana-Adestramento"
+          />
+        </a>
 
-        <img
-          id="logo"
-          src="_imagens/logo-escrito-vazado-branco.png"
-          alt="logo"
-        />
-        <nav id="menu">
-          <!-- nav é menu de navegação da página-->
-          <h1>Menu Principal</h1>
-          <!--Não tem relevancia para a página, mas tem relevância para busca-->
-          <ul type="disc">
+        <button class="menu-toggler" aria-label="Abrir menu">☰</button>
+
+        <nav class="navbar">
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="adestramento.html">Adestramento</a></li>
             <li>
@@ -38,8 +34,14 @@
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
 
+      <div class="header-test">
+        <h1>Mariana Bernardo Adestramento</h1>
+        <h2>Seu melhor amigo com melhor qualidade de vida!</h2>
+      </div>
+    </header>
+    <main>
       <section id="txtp">
         <h2>Quem sou eu?</h2>
         <figure class="foto-principal">
@@ -88,25 +90,22 @@
           vida como um todo.
         </p>
       </section>
+    </main>
 
-      <footer id="rodape">
-        <p>Mariana Bernardo Adestramento</p>
-        <a
-          href="http://www.facebook.com/marianabernardo.adestradora"
-          target="_blank"
-        >
-          <i class="fab fa-facebook"></i>
-          Facebook</a
-        >
-        <a
-          href="https://www.instagram.com/mariana.adestradora/"
-          target="_blank"
-        >
-          <i class="fab fa-instagram"></i>
-          Instagram</a
-        >
-      </footer>
-      <script src="script.js"></script>
-    </div>
+    <footer id="rodape">
+      <p>Mariana Bernardo Adestramento</p>
+      <a
+        href="http://www.facebook.com/marianabernardo.adestradora"
+        target="_blank"
+      >
+        <i class="fab fa-facebook"></i>
+        Facebook</a
+      >
+      <a href="https://www.instagram.com/mariana.adestradora/" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Instagram</a
+      >
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
