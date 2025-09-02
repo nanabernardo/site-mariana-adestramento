@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Tilillium Web", Arial, Helvetica, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   background-color: #642e8e;
   color: white;
 }
@@ -91,7 +91,8 @@ body {
 }
 
 .header-test h2 {
-  font-family: "Titillium Web", serif;
+ font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
   font-size: 18pt;
   color: #ee9d37;
 }
@@ -100,6 +101,8 @@ p {
   text-indent: 20px;
   text-align: justify;
   color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 /*foto principal*/
@@ -155,6 +158,11 @@ section#txtp h2 {
   text-align: center;
 }
 
+section#txtp p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
 h1 {
   font-size: 30px;
   color: white;
@@ -170,6 +178,8 @@ table {
   border-spacing: 0px;
   width: 350px;
   margin: 20px auto;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 table td {
@@ -195,7 +205,8 @@ form {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 form h2 {
