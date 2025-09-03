@@ -53,10 +53,15 @@
       <section id="ades">
         <h1>Como funciona o adestramento?</h1>
         <p>
-          Trabalho com foco em comportamento. Uso bastante reforço positivo e
+          Trabalho com foco em comportamento. Uso bastante reforço positivo
+          (petisco, ração, brinquedo... qualquer coisa que vá agradar o cão) e
           redirecionamento de atenção. Não indico treinos com broncas,
-          principalmente para cães que já são agitados e ansiosos. São duas
-          aulas por semana, total de 8 aulas no mês. Cada aula dura de 30min a
+          principalmente para cães que já são agitados e ansiosos.
+        </p>
+        <p>
+          Existem pacotes de três aulas por semana (total de 12 aulas no mês),
+          duas aulas por semana (total de 8 aulas por mês) e pacotes de uma aula
+          por semana (total de quatro aulas por mês). Cada aula dura de 30min a
           1h.
         </p>
         <p>
@@ -78,50 +83,37 @@
         <section id="galeria">
           <h2>Galeria de cães</h2>
           <div class="galeria-fotos-adestramento">
-            <figure class="foto-golden-bebe">
-              <img
-                id="foto"
-                src="_imagens/IMG-20230804-WA0021.jpg"
-                alt="foto"
-              />
-              <figcaption>
-                <h3>Luke</h3>
-                <p>Luke com foco no parque.</p>
-              </figcaption>
-            </figure>
-            <figure class="foto-golden-bebe">
-              <img
-                id="foto"
-                src="_imagens/IMG_20181022_160224572.jpg"
-                alt="foto"
-              />
-              <figcaption>
-                <h3>Fiapinha de Manga</h3>
-                <p>Trabalho de foco e atenção na rua.</p>
-              </figcaption>
-            </figure>
-            <figure class="foto-golden-bebe">
-              <img
-                id="foto"
-                src="_imagens/IMG_20181106_160830957.jpg"
-                alt="foto"
-              />
-              <figcaption>
-                <h3>Landu e Piaf</h3>
-                <p>Obediência na rua.</p>
-              </figcaption>
-            </figure>
-            <figure class="foto-golden-bebe">
-              <img
-                id="foto"
-                src="_imagens/IMG_20181127_154245311.jpg"
-                alt="foto"
-              />
-              <figcaption>
-                <h3>Amora</h3>
-                <p>Treino de obediência.</p>
-              </figcaption>
-            </figure>
+            <img
+              src="_imagens/IMG-20230804-WA0021.jpg"
+              alt="Luke"
+              class="miniatura"
+              data-titulo="Luke"
+              data-legenda="Luke com foco no parque."
+            />
+
+            <img
+              src="_imagens/IMG_20181022_160224572.jpg"
+              alt="Fiapinha de Manga"
+              class="miniatura"
+              data-titulo="Fiapinha de Manga"
+              data-legenda="Trabalho de foco e atenção na rua."
+            />
+
+            <img
+              src="_imagens/IMG_20181106_160830957.jpg"
+              alt="Landu e Piaf"
+              class="miniatura"
+              data-titulo="Landu e Piaf"
+              data-legenda="Obediência na rua."
+            />
+
+            <img
+              src="_imagens/IMG_20181127_154245311.jpg"
+              alt="foto"
+              class="miniatura"
+              data-titulo="Amora"
+              data-legenda="Treino de obediência."
+            />
           </div>
         </section>
       </section>
@@ -142,6 +134,18 @@
           Instagram</a
         >
       </footer>
+
+      <div id="lightbox" class="lightbox">
+        <span class="fechar">&times;</span>
+        <figure>
+          <img class="lightbox-img" src="" alt="" />
+          <figcaption class="lightbox-caption">
+            <h3>titulo</h3>
+            <p>legenda da imagem</p>
+          </figcaption>
+        </figure>
+      </div>
+
       <script src="script.js"></script>
     </div>
   </body>
