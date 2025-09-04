@@ -222,6 +222,19 @@ section#txtp {
   text-align: justify;
 }
 
+section#cComp {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  text-align: justify;
+}
+section#soci {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  text-align: justify;
+}
+
 section h2 {
   text-align: center;
 }
